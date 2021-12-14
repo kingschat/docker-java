@@ -4,5 +4,12 @@ RUN apt-get -y update
 
 RUN apt-get -y install python
 
-RUN apt-get -y install ruby ruby-dev build-essential
-RUN gem install fastlane
+RUN apt-get -y install make \
+                        curl \
+                        file \
+                        ssh
+
+RUN apt-get -y install ruby2.7 \
+                        ruby2.7-dev \
+                        build-essential ; \
+    gem install fastlane
