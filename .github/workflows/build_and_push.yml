@@ -36,6 +36,6 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ghcr.io/<username>/docker-java:latest
+          tags: ghcr.io/kingschat/docker-java:latest
        
           
